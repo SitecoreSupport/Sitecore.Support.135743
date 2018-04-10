@@ -198,7 +198,6 @@ namespace Sitecore.Support.Pipelines.HttpRequest
       if (loginItem != null)
       {
         var urlOptions = Sitecore.Links.UrlOptions.DefaultOptions;
-        urlOptions.LanguageEmbedding = LanguageEmbedding.Always;
         string loginPage = Sitecore.Links.LinkManager.GetItemUrl(loginItem, urlOptions);
         return loginPage ?? site.LoginPage;
       }
